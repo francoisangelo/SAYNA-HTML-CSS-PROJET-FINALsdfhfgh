@@ -20,15 +20,11 @@ colour{
     background-color: #509bd7;  
     color: #eee;
 }
-.form-control{
-    width: 120px;
-    color:#eee;
-}
+
 .two{
     background-color: #eee;
     width: 100%;
     padding: 5%;
-    margin: 40px;
 }
 #jaune{
     background-color: goldenrod;
@@ -45,7 +41,7 @@ colour{
     margin: 20%;
     width: 100%;
 }
-.list-style-type{
+.list-style-type-none{
     list-style-type: none;
 }
 .border-y{
@@ -62,15 +58,31 @@ colour{
     width: 20px;
 
 }
-.footer{
-background-color: #444;
+.footer1{
+background-color:black;
 color: #eee;
-
-}
-.apk{
-    padding: 5%;
 
 }
 .text{
     color: #d35649;
+}
+
+
+#maps-bar{
+    border: 2px solid white;
+    border-radius: 50px;
+}
+
+#maps-bar > img{
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top:5px;
+}
+.email{
+    background-color:black;
+}
+.footer2{
+ background-color: #444;
+ color: #98a5a9;
 }
