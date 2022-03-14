@@ -1,123 +1,212 @@
 <!DOCTYPE html>
-</body>
-</html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/bootstrap-5.0.2-dist/css/bootstrap.min.css">
-    <link rel="stylesheet " href="assets/style.css ">
-    <title>Deask topSearch</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="assets/css/reset.css" type="text/css"> -->
+    <link rel="stylesheet" href=" Assets/style.css">
+    <link rel="stylesheet" href="assets/css/main.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/187d11cae1.js" crossorigin="anonymous"></script>
+    <title>index Page</title>
 </head>
-
 <body>
     <header>
-        <nav class=" first d-flex text-white align-items-center justify-content-between ">
-            <a class="navbar-brand text-white "><img src="assets/Images/group-2.svg " alt="group-2 "
-                    width="40px ">[Events]</a>
-            <div class=" first d-flex justify-content-end">
-                <img src=" assets/Icones/search_icon.svg " width="30px " alt="">
-                <p>Search</p>
-                <img src="assets/Icones/about_icon.svg " width="30px " alt="">
-                <p>About</p>
-                <img src="assets/Icones/blog_icon.svg " width="30px " alt="">
-                <p>Blog</p>
-                <img src="assets/Icones/more_icon.svg " width="30px ">
-                <p>More</p>
-            </div>
-        </nav>
-    <div  class="d-inline">
-    </header>
-    <div class="container fluide two align-items-center">
-        <div class="titre">
-            <h1>Filtre by location,host,date,daytime</h1>
+    <nav class="first  d-flex justify-content-between">
+          <div>
+            <img src="assets/images/group-2.svg" width="100px" alt="logo">
+            <a href="index.html">[Events]</a>
         </div>
-        <div class="row ">
-                 <form class="align-items-center justify-content-around d-flex p-20% width-10%">
-                <div>
-                <label for="Location"class="form-label">Location </label>
-                <input type="location" class="form-control" id="location">
-            </div>
-            <div>
-                <label for="Host" class="form-label"> Host</label>
-                <input type="Host" class="form-control" id="Host">
-            </div>
-            <div>
-                <label for="Subject" class="form-label"> Subject </label>
-                <input type="Subject" class="form-control " id="Subject">
-            </div>
-            <div>
-                <label for="Initial Date"> Initial Date</label>
-                <input type="Initial Date" class="form-control" id="Initial Date" placeholder="06/18/2020"><i class="fa-regular fa-calendar"></i>
-            </div>
-            <div>
-                <label for="Final Date"> Final Date</label>
-                <input type="Final Date" class="form-control" id="Final Date" placeholder="06/18/2020" > <i class="fa-regular fa-calendar"></i>
-            </div>
-            <div>
-                <label for="Daytime"> Daytime</label>
-                <input type="Daytime" class="form-control" id="Daytime" placeholder="choos...">
-            </div>
-            <div>
-                <label for=""></label>
-                <input type="submit" id="bouton" class="form-control" placeholder="Search">
-            </div>
-            <div>
-                <label for=""></label>
-                <input type="submit" class="form-control" id="jaune" placeholder="Clear filter" >
-            </div>
-            </form>
+        <div class=" d-flex text-white">
+            <ul class="d-flex w-5Opx">
+                <li class="w-2px">
+                <a href="search"><img src="assets/Icones/search_icon.svg" width="20px" alt=""> <i class="fas fa-search"></i><span>Search</span></a>
+                
+                <li>
+                    <a href="detail.html"> <img src="assets/Icones/about_icon.svg" width="10px"><i class="far fa-user"></i><span>About</span></a>
+                </li>
+                <li>
+                    <a href="#"> <img src="assets/Icones/blog_icon.svg" width="10px"  alt=""><i class="fas fa-rss"></i><span>Blog</span></a>
+                </li>
+                <li>
+                    <a href="detail.html"> <img src="assets/Icones/more_icon.svg" width="10px" alt=""><i class="fas fa-bars"></i><span>More</span></a>
+                </li>
+            </ul>
         </div>
-    </div>
-    <div class=" container justify-content-between  text--light-green ">
-        <div class="row d-flex align-items-center">
-        <div class="title">
-                <h1> Search Found 7 [Events] Nearby.</h1>
-                </div>
-                 <div class="col-3">
-                  <h3 class="image " > go to[gathering] example<img src="assets/Images/group-2.svg" alt="" width="320px"></h3>
-                  </div>
-                  <div class="col-3 ">
-                    <h3 class="image"> go to[gathering] example <img src="assets/Images/group-2.svg" width ="300px"> </h3>
-                </div>
-                <div class="col-3 ">
-                    <h3 class="image"> go to[gathering] example <img src="assets/Images/group-2.svg" width="300px" alt=""></h3>
-                 </div>
-                 </div>
-                </div> 
-                <div class="container w-100% text-white bg-dark d-flex align-items-center justify-content-between">
-                    <ul class="d-flex ">
-                        <h3>HOME</h3>
-                        <h3>SEARCH</h3>
-                        <h3>ABOUT US</h3>
-                        <h3>ADVERTISE</h3>
+    </nav>
+</header>
+    <section class="hero align-items-center">
+        <div class="d-flex align-items-center w-100 justify-content-center">
+                <h1 class="text-upperca px-2 rounded ">[Events]... your gateway to connect with events around your area</h1>
+                <form class="d-flex flex-column my-2 py-4 px-4 rounded" action="search-results.html">
+                    <label class="text-uppercase text-center rounded pb-3" for="text">Search Events Nearby</label>
+                    <div class="search-form">
+                        <input type="text" id="text" width="50px" placeholder="Insert your location here">
+                        <a class="anc-btn rounded text-uppercase px-3 text-center" href="search-results.html">Search</a>
                     </div>
-                    <div class="d-flex map">
-                        <img src="assets/Icones/mapsnavbar_icon.svg" alt="">
-                    </div>
-                    <ul class="d-flex">
-                        <h3>FACEBOOK</h3>
-                        <h3>TWITTER</h3>
-                        <h3>INSTAGRAM</h3>
-                        <h3>BLOG</h3>
-                    </div>
-                    < class="container">
-                        <div class="class row">
-                            <div class="col-3">
-                                <h3>Subscribe</h3>
-                                <input type="text" placeholder="Insert your e-mail" id="">
-                            </div>
-                            <div class="col-3">
-                         <h3> contact</h3>
-                         <p>Have a question or sugestion?</p>
-                            </div>
+                </form>
+                <a class="mr-auto ml-auto my-4 py-2 px-2 rounded btn-det" href="detail.html">How It Works</a>
+        </div>
+    </section>
+    <section class="explanation-section container-fluid d-none d-md-block my-4 align-items-center m-300px">
+        <h4 class="text-center my-5 clr-orange">[Events] works in four simple steps.</h4>
+        <div class="row text-center">
+            <div class="col-lg-6 py-2 px-5">
+                <div><i class="fas fa-search-location"></i></div>
+                <div class="py-3"><h5>1-Locate:</h5></div>
+                <div><p>It's simple, on [Events] homepage, enter the name of the location you want to spend some good quality time with people and click on search.</p></div>
+            </div>
+            <div class="col-lg-6 py-2 px-5">
+                <div><i class="fas fa-check-double"></i></div>
+                <div class="py-3"><h5>2-Confirm or Create:</h5></div>
+                <p>Go to check the events nearby the location you searched for and apply for any [Events] available. Every [gathering] has a subject, that you can search for too! If no [Events] are available on the location you selected, you can create and share your event.</p>
+            </div>
+            <div class="col-lg-6 py-2 px-5">
+                <div><i class="fas fa-map-marked-alt"></i></div>
+                <div class="py-3"><h5>3-Go!</h5></div>
+                <p>Select the [Events], wait for the scheduled day and go! Be prepared to meet new people, create new connections and have a great time!</p>
+            </div>
+            <div class="col-lg-6 py-2 px-5">
+                <div><i class="fas fa-users"></i></div>
+                <div class="py-3"><h5>4-Have a good time:</h5></div>
+                <p>Once you are at the [event] location, look for the host, enjoy and have fun!</p>
+            </div>
+        </div>
+    </section>
+    <section class="carousel-port">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active bg-orange">
+                <img src="assets/images/group-2.jpg" class="d-block w-100" alt="group-2">
+                <h4 class="my-3 ">[Events] near you</h4>
+                <h5 class="py-3">Every month a new you might find [gathering] near you and enjoy the company with people whom you can share mutual interests</h5>
+                <a class="clr-orange" href="search-results.html">Find a [event]</a>
+              </div>
+              <div class="carousel-item bg-gray">
+                <img src="assets/images/group-4.jpg" class="d-block w-100" alt="group-4">
+                <h4 class="my-3 ">[Events] connecting you </h4>
+                <h5 class="py-3">You can create [Events] events around your area and share them with people you know and with whoever wants to connect</h5>
+                <a class="clr-gray" href="search-results.html">Learn more about [Events]</a>
+              </div>
+              <div class="carousel-item bg-blue">
+                <img src="assets/images/group-3.jpg" class="d-flex w-100" alt="group-3">
+                <h4 class="my-4">[Events] spreding love</h4>
+                <h5 class="py-3">[Events] let you meet new people, share interests and spreading love</h5>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <section class="hero-lg w-100">
+        <div class="d-flex py-5 bg-orange justify-content-between">
+            <div class="px-5">
+                <h4 class="my-3 ">[Events] near you</h4>
+                <h5 class="py-5">Every month a new you might find [gathering] near you and enjoy the company with people whom you can share mutual interests</h5>
+                <a class="py-3 px-3 clr-orange" href="search-results.html">Find a [Events]</a>
+            </div>
+            <div class="px-5">
+                <img src="assets/images/group-2.jpg" alt="group-2">
+            </div>
+        </div>
+        <div class="d-flex py-5 bg-gray justify-content-between">
+            <div class="px-5">
+                <h4 class="my-3 ">[Events] connecting you </h4>
+                <h5 class="py-5">You can create [Events] events around your area and share them with people you know and with whoever wants to connect</h5>
+                <a class="py-3 px-3 text-gray" href="search-results.html">Learn more about [Events]</a>
+            </div>
+            <div class="px-5">
+                <img src="assets/images/group-4.jpg" alt="group-2">
+            </div>
+        </div>
+        <div class="d-flex py-5 bg-blue justify-content-between">
+            <div class="px-5">
+                <h4 class="my-4">[Events] spreding love</h4>
+                <h5 class="py-5">[Events] let you meet new people, share interests and spreading love</h5>
+            </div>
+            <div class="px-5">
+                <img src="assets/images/group-3.jpg" alt="Group of People together">
+            </div>
+        </div>
+    </section>
+    <footer class="d-flex flex-column">
+        <div class="large-footer">
+            <div>
+                <ul class="d-flex justify-content-center my-5 text-uppercase">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="search-results.html">Search</a>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Advertise</a>
+                    </li>
+                    <li class="rounded-circle">
+                        <a  href="#"><i class="fas fa-map-marker-alt"></i></a>
+                    </li>
+                    <li>
+                        <a href="index.html">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="search-results.html">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="#">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <div class=" row container-fluid ">
+                <div class="col-4">
+                    <form>
+                        <h4>Subscribe</h4>
+                        <div>
+                            <input type="email" id="subscribe" placeholder="Insert your e-mail here">
+                            <input class="button rounded my-1 px-4" type="submit" value="send">
                         </div>
-                    </div>
-                      </div>
-                        </div>
-                    </div>
-                </div>    
+                    </form>
+                </div>
+                <div class="col-4">
+                    <h4>Contact</h4>
+                    <p>Have a question or sugestion?</p>
+                    <a href="#">contact@events.com</a>
+                </div>
+                <div class="col-4">
+                    <h4>About</h4>
+                    <p>[Events] is an online plataform that works to improve and increase social life conections, when this nightmare that we are curently living in is over <a href="details.html">learn more.</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between">
+            <div class="d-flex align-items-center">
+                <ul class="d-flex flex-wrap py-3 px-3">
+                    <li><a href=""><i class="fab fa-facebook-square pr-1"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter pr-1"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram pr-1"></i></a></li>
+                    <li><a href=""><i class="fab fa-tumblr pr-1"></i></a></li>
+                    <li><a href=""><i class="fab fa-linkedin pr-1"></i></a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="small py-3 pl-3"> © 2020 [Events], Inc. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
 </body>
-
 </html>

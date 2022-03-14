@@ -1,9 +1,0 @@
-.color{
-  --primary-color: #d35649; 
-  --primary-gray:#98a5a5;
-  --gray-footer: #1f1f1f;  
-   --primary-blue:#509bd7; 
-  --gray-footer-btn: #444;  
-    --primary-purple: #575a89; 
-  --light-gray: #eee;  
-}
